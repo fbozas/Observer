@@ -5,9 +5,9 @@ namespace After.ConcreteObservers
 {
     public class SpreadSheet : IObserver
     {
-        public void Update()
+        public void Update(int val)
         {
-            Console.WriteLine("Spreadsheet got notified");
+            Console.WriteLine("Spreadsheet got notified " + val);
         }
     }
 }

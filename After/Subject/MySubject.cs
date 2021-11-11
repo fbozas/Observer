@@ -17,11 +17,11 @@ namespace After.Subject
             _observers.Remove(observer);
         }
 
-        public void NotifyObservers()
+        public void NotifyObservers(int val)
         {
             foreach(IObserver observer in _observers)
             {
-                observer.Update();
+                observer.Update(val);
             }
         }
     }

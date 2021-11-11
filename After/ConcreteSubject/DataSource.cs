@@ -15,7 +15,7 @@ namespace After.ConcreteSubject
             set
             {
                 _value = value;
-                NotifyObservers(_value);
+                NotifyObservers();
             }
         }
     }
